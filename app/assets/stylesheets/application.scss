@@ -1,1 +1,73 @@
 @import "bootstrap/scss/bootstrap";
+
+// card design
+main, .my_card, .my_card_body, .actions {
+    display: flex;
+}
+main, .my_card, .my_card_body {
+    flex-direction: column;
+    justify-content: center;
+}
+main, .my_card, .actions {
+    align-items: center;
+}
+
+.my_card {
+    border: 1px solid transparent;
+}
+.img_banner {
+    height: 220px;
+    width: 400px;
+    border-radius: 25px;
+}
+.my_card_body {
+    align-items: flex-start;
+}
+.bold {
+    font-weight: bold;
+}
+.actions {
+    width: 30%;
+    justify-content: space-evenly;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black
+}
+
+// header
+.my_nav {
+    border-bottom: 2px solid #2E6DB4;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    margin-right: 10px;
+}
+
+// colors
+#red {
+    color: #DF0024;
+}
+#blue {
+    color: #2E6DB4;
+}
+#green {
+    color: #00AC9F;
+}
+#violet {
+    color: #665cbe;
+}
+#yellow {
+    color: #F3C300;
+}
+
+// review game
+.review {
+    margin-top: 30px;
+}
