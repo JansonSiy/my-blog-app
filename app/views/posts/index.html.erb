@@ -45,8 +45,9 @@
       <img src="<%= post.image_url %>" class="card-img-top" alt="image_url">
       <div class="card-body">
         <p class="card-title"><%= post.title %></p>
-        <p class="card-text"><%= post.author %></p>
+        <p class="card-text"><%= post.studio %></p>
         <p class="card-text"><%= post.category %></p>
+        <p class="card-text"><%= post.author %></p>
       </div>
       <div>
         <%= link_to 'Show', post %>
@@ -58,3 +59,6 @@
     </div>
   <% end %>
 </div>
+
+
+
