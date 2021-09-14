@@ -45,3 +45,20 @@ Post.create(id: 4,
             content: "Ghost of Tsushima is a 2020 action-adventure game developed by Sucker Punch Productions 
             and published by Sony Interactive Entertainment. Featuring an open world, the player controls 
             Jin Sakai, a samurai on a quest to protect Tsushima Island during the first Mongol invasion of Japan.")
+Post.create(id: 5, 
+            title: "Marvel's Spider-Man", 
+            studio: "Insomniac Games", 
+            category: "Fighting Game, Action-Adventure Game, Nonlinear Gameplay", 
+            author: "Diana Prince",
+            image_url: "https://i.annihil.us/u/prod/marvel/i/mg/b/d0/5b9820d0caab7/clean.jpg", 
+            content: "Marvel's Spider-Man is a 2018 action-adventure game developed by Insomniac Games and published 
+            by Sony Interactive Entertainment. Based on the Marvel Comics superhero Spider-Man, it is inspired by the 
+            long-running comic book lore series adaptations in other media.")
+Post.create(id: 6, 
+            title: "The Witcher 3: Wild Hunt", 
+            studio: "CD Projekt", 
+            category: "Action Role-Playing",
+            author: "Barry Allen",
+            image_url: "https://deadline.com/wp-content/uploads/2021/03/GOT_KEYART_78448-1.jpg?w=681&h=383&crop=1", 
+            content: "The Witcher 3: Wild Hunt is an action role-playing game developed by Polish developer CD Projekt Red, 
+            and first published in 2015.")

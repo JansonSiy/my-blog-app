@@ -1,31 +1,23 @@
 <main>
-  <div class="header">
-    <h1>
-      <span id="red">Blog</span><span id="blue">Now</span><span id="yellow">.</span><span id="green">Play</span><span id="violet">Later</span>
-    </h1>
-    <%= image_tag("logo.png", :size => "120x120") %>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <% @posts.each do |post| %>
+      <div class="col">
+        <div class="card my_card">
+        <img src="<%= post.image_url %>" class="card-img-top img_banner" alt="image_url">
+        <div class="card-body my_card_body">
+          <p class="card-title"><span class="bold">Game Title:</span> <%= post.title %></p>
+          <p class="card-text"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
+          <p class="card-text"><span class="bold">Category/Genre:</span> <%= post.category %></p>
+          <p class="card-text"><span class="bold">Author:</span> <%= post.author %></p>
+        </div>
+        <div class="actions">
+          <%= link_to '&#128064;'.html_safe, post %>
+          <%= link_to '&#128394;'.html_safe, edit_post_path(post) %>
+          <%= link_to '&#128465;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+        </div>
+      </div>
+    <% end %>
   </div>
-
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <% @posts.each do |post| %>
-    <div class="col">
-      <div class="card my_card">
-      <img src="<%= post.image_url %>" class="card-img-top img_banner" alt="image_url">
-      <div class="card-body my_card_body">
-        <p class="card-title"><span class="bold">Game Title:</span> <%= post.title %></p>
-        <p class="card-text"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
-        <p class="card-text"><span class="bold">Category/Genre:</span> <%= post.category %></p>
-        <p class="card-text"><span class="bold">Author:</span> <%= post.author %></p>
-      </div>
-      <div class="actions">
-        <%= link_to '&#128064;'.html_safe, post %>
-        <%= link_to '&#128394;'.html_safe, edit_post_path(post) %>
-        <%= link_to '&#128465;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div>
-      </div>
-    </div>
-  <% end %>
-</div>
-
-<div class="review"><%= link_to 'Want to review a game? Click here!', new_post_path %></div>
+  <div class="review"><%= link_to 'Want to review a game? Click here!', new_post_path %></div>
 </main>
