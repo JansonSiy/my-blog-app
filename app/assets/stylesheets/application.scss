@@ -1,5 +1,20 @@
 @import "bootstrap/scss/bootstrap";
 
+// variables
+:root {
+    --color-palette-psRed: #DF0024;
+    --color-palette-psBlue: #2E6DB4;
+    --color-palette-psGreen: #00AC9F;
+    --color-palette-psViolet: #665cbe;
+    --color-palette-psYellow: #F3C300;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 // card design
 main, .my_card, .my_card_body, .actions {
     display: flex;
@@ -43,7 +58,7 @@ a:link, a:visited, a:active {
 }
 
 .my_nav {
-    border-bottom: 2px solid #2E6DB4;
+    border-bottom: 2px solid var(--color-palette-psBlue);
     margin-bottom: 50px;
 }
 .logo {
@@ -53,22 +68,34 @@ a:link, a:visited, a:active {
 
 // colors
 #red {
-    color: #DF0024;
+    color: var(--color-palette-psRed);
 }
 #blue {
-    color: #2E6DB4;
+    color: var(--color-palette-psBlue);
 }
 #green {
-    color: #00AC9F;
+    color: var(--color-palette-psGreen);
 }
 #violet {
-    color: #665cbe;
+    color: var(--color-palette-psViolet);
 }
 #yellow {
-    color: #F3C300;
+    color: var(--color-palette-psYellow);
 }
 
 // review game
 .review {
-    margin-top: 30px;
+    margin: 30px 0px 30px 0px;
+    padding: 5px;
+    border: 1.5px solid var(--color-palette-psBlue);
+    border-radius: 10px;
+}
+
+// footer
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
 }
