@@ -5,12 +5,12 @@
         <div class="card my_card">
         <img src="<%= post.image_url %>" class="card-img-top img_banner" alt="image_url">
         <div class="card-body my_card_body">
-          <p class="card-title"><span class="bold">Game Title:</span> <%= post.title %></p>
-          <p class="card-text"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
-          <p class="card-text"><span class="bold">Category/Genre:</span> <%= post.category %></p>
-          <p class="card-text"><span class="bold">Author:</span> <%= post.author %></p>
+          <p class="card-title" id="red"><span class="bold">Game Title:</span> <%= post.title %></p>
+          <p class="card-text" id="blue"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
+          <p class="card-text" id="green"><span class="bold">Category/Genre:</span> <%= post.category %></p>
+          <p class="card-text" id="yellow"><span class="bold">Author:</span> <%= post.author %></p>
         </div>
-        <div class="actions">
+        <div class="features">
           <%= link_to '&#128064;'.html_safe, post %>
           <%= link_to '&#128394;'.html_safe, edit_post_path(post) %>
           <%= link_to '&#128465;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
