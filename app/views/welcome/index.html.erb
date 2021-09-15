@@ -1,3 +1,10 @@
-<h1>Welcome to PlayNow.WorkLater!</h1>
-
-<%= link_to 'check blogs', posts_path %>
+<div class="welcomeCon">
+    <div class="welcomeDes">
+        <p>Welcome to <span id="red">Blog</span><span id="yellow">Now</span><span id="blue">.</span><span id="green">Play</span><span id="violet">Later</span>!<br>
+        <br>To put it simply, we review games to let you know if a game is worth both your time and money.<br>
+        <br>Interested? Check out our reviews <%= link_to 'HERE!', posts_path %></p>
+    </div>
+    <div class="welcomeImg">
+        <%= image_tag("logo_2.jpeg", :size => "450x400") %>
+    </div>
+</div>

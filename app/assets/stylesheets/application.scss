@@ -13,6 +13,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 // card design
@@ -47,7 +49,6 @@ main, .my_card, .actions {
 }
 a:link, a:visited, a:active {
     text-decoration: none;
-    color: black
 }
 
 // header
@@ -60,6 +61,7 @@ a:link, a:visited, a:active {
 .my_nav {
     border-bottom: 2px solid var(--color-palette-psBlue);
     margin-bottom: 50px;
+    width: 100%;
 }
 .logo {
     justify-content: center;
@@ -98,4 +100,21 @@ footer {
     color: white;
     text-align: center;
     margin-top: auto;
+}
+
+// welcome
+.welcomeCon, .welcomeDes, .welcomeImg {
+    display: flex;
+    font-size: 1.2rem;
+}
+.welcomeDes, .welcomeImg {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.welcomeCon {
+    height: 400px;
+    width: 60%;
 }
