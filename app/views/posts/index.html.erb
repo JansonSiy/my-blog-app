@@ -11,9 +11,9 @@
           <p class="card-text" id="yellow"><span class="bold">Author:</span> <%= post.author %></p>
         </div>
         <div class="features">
-          <%= link_to '&#128064;'.html_safe, post %>
-          <%= link_to '&#128394;'.html_safe, edit_post_path(post) %>
-          <%= link_to '&#128465;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to '≡', post %>
+          <%= link_to '✎', edit_post_path(post) %>
+          <%= link_to '✘', post, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
         </div>
       </div>
