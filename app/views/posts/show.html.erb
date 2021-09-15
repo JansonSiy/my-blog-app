@@ -1,14 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<img src="<%= @post.image_url %>" class="img_banner" alt="image_url">
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+<h1><%= @post.title %></h1>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<p class="author">By: <%= @post.author %></p>
+
+<div class="content"><%= @post.content %></div>
+
+<div class="action_show"><%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %></div>
