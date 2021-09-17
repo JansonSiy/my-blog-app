@@ -3,18 +3,18 @@
     <% @posts.each do |post| %>
       <div class="col">
         <div class="card my_card">
-        <img src="<%= post.image_url %>" class="card-img-top img_banner" alt="image_url">
-        <div class="card-body my_card_body">
-          <p class="card-title" id="red"><span class="bold">Game Title:</span> <%= post.title %></p>
-          <p class="card-text" id="blue"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
-          <p class="card-text" id="green"><span class="bold">Category/Genre:</span> <%= post.category %></p>
-          <p class="card-text" id="yellow"><span class="bold">Author:</span> <%= post.author %></p>
-        </div>
-        <div class="features">
-          <%= link_to '≡', post %>
-          <%= link_to '✎', edit_post_path(post) %>
-          <%= link_to '✘', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
+          <img src="<%= post.image_url %>" class="card-img-top img_banner" alt="image_url">
+          <div class="card-body my_card_body">
+            <p class="card-title" id="red"><span class="bold">Game Title:</span> <%= post.title %></p>
+            <p class="card-text" id="blue"><span class="bold">Developer/Studio:</span> <%= post.studio %></p>
+            <p class="card-text" id="green"><span class="bold">Category/Genre:</span> <%= post.category %></p>
+            <p class="card-text" id="yellow"><span class="bold">Author:</span> <%= post.author %></p>
+          </div>
+          <div class="features">
+            <%= link_to '≡', post %>
+            <%= link_to '✎', edit_post_path(post) %>
+            <%= link_to '✘', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
         </div>
       </div>
     <% end %>
